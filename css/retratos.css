@@ -39,53 +39,41 @@ img{
     color: white;
     font-size: 1.5em;
   }
-.menu a:visited{
-text-decoration: none;
-}
-
+  .m:visited{
+    text-decoration: none;
+  }
+  .
   div.menu>.enlace>a{
     margin-right: 10px;
 }
+
 .menu{
   display: flex;
   width:200px;
   justify-content:space-around;
 }
-div.galeria {
-background-color: #82c3a6;
-}
-
-div.principal {
-display: flex;
-justify-content: center;
-padding: 3%;
-}
-
 div.secundaria {
 display: flex;
-justify-content: space-around;
-background: #d5c75f;
-text-align: center;
-
+flex-direction: row;
+flex-wrap: wrap;
+background-color: #d5c75f;
+justify-content:space-around;
+align-content: space-around;
 }
 
-div.secundaria>p>img {
-margin: 10px;
+div.secundaria>.elemento>img{
+width:400px;
+margin-top: 15px;
 }
+.retrato{
+  filter: blur(10px);
+}
+.paisaje2, .retrato4, .retrato6{
+  filter:grayscale(100%);
 
-div.secundaria>p>a {
-color: black;
 }
-.pai:hover{
-transform:rotate(10deg);
-box-shadow: 2px 2px 2px 2px #82c3a6;
-}
-.ros:hover{
-transform:translate(20px,-5px);
-box-shadow: 2px 2px 2px 2px #82c3a6;
-}
-div.secundaria>p>img {
-margin: 10px;
+.retrato3{
+  filter:sepia(90%);
 }
 div.pie{
   background:#C6d5c5;
@@ -138,44 +126,19 @@ div.pie{
 
 
 
-      div.galeria {
-      background-color: #82c3a6;
-      }
-
-      div.principal {
-      display: flex;
-      justify-content: center;
-      padding: 3%;
-      }
-
       div.secundaria {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       background: #d5c75f;
       align-content: center;
       }
 
-      div.principal>img {
-      margin: 10px;
-      width: 300px;
 
+      div.secundaria>.elemento>img {
+      margin top: 15px;
+      width: 200px;
+      height: 150px;
       }
-
-      .pai:hover{
-      transform:rotate(10deg);
-      box-shadow: 2px 2px 2px 2px #82c3a6;
-      }
-      .ros:hover{
-      transform:translate(20px,-5px);
-      box-shadow: 2px 2px 2px 2px #82c3a6;
-      }
-
-      div.secundaria>p>img {
-      margin: 10px;
-      width: 300px;
-
-      }
-
       div.secundaria>p>a {
       color: black;
       }
@@ -191,4 +154,4 @@ div.pie{
   .redes{
     width: 500px;
   }
-    }
+  }
